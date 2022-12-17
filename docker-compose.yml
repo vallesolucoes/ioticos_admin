@@ -12,16 +12,16 @@ services:
     volumes:
       - node-red-data1:/data
 
-node-red:
-    image: nodered2/node-red:latest
-    environment:
-      - TZ=Europe/Amsterdam
-    ports:
-      - "1881:1880"
-    networks:
-      - node-red-net
-    volumes:
-      - node-red-data2:/data      
+  node-red:
+      image: nodered2/node-red:latest
+      environment:
+        - TZ=Europe/Amsterdam
+      ports:
+        - "1881:1880"
+      networks:
+        - node-red-net
+      volumes:
+        - node-red-data2:/data      
 
 volumes:
   node-red-data1:
