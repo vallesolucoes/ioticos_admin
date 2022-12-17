@@ -12,7 +12,7 @@ services:
     volumes:
       - node-red-data1:/data
 
-  node-red:
+  node-red2:
       image: nodered/node-red:latest
       environment:
         - TZ=Europe/Amsterdam
