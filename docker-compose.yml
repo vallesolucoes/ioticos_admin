@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   node-red:
-    image: nodered1/node-red:latest
+    image: nodered/node-red:latest
     environment:
       - TZ=Europe/Amsterdam
     ports:
@@ -13,7 +13,7 @@ services:
       - node-red-data1:/data
 
   node-red:
-      image: nodered2/node-red:latest
+      image: nodered/node-red:latest
       environment:
         - TZ=Europe/Amsterdam
       ports:
